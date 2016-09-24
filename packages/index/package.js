@@ -12,10 +12,10 @@ Package.onUse((api)=> {
   api.use('iron:router');
   api.use('tap:i18n@1.8.0');
   api.use('reactive-var','client');
-}
 //For images
 //api.addAssets([]);
 
 
 // For files
-//   api.addFiles(['index.html','index.js'], 'client');
+  api.addFiles(['index.html','index.js'], 'client');
+});
