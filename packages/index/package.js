@@ -10,7 +10,7 @@ Package.onUse((api)=> {
   api.use('ecmascript');
   api.use('templating'); 
   api.use('iron:router');
-  api.use('tap:i18n@1.8.0');
+  // api.use('tap:i18n@1.8.0');
   api.use('reactive-var','client');
 //For images
 //api.addAssets([]);
@@ -18,4 +18,5 @@ Package.onUse((api)=> {
 
 // For files
   api.addFiles(['index.html','index.js'], 'client');
+  api.addFiles(['Router.js'], 'client');
 });

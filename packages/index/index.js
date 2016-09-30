@@ -1,9 +1,6 @@
-import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
-
-import './index.html';
-
-Template.hello.onCreated(function helloOnCreated() {
+// import { Template } from 'meteor/templating';
+// import { ReactiveVar } from 'meteor/reactive-var';
+Template.hello.onCreated(function () {
   // counter starts at 0
   this.counter = new ReactiveVar(0);
 });
