@@ -17,6 +17,6 @@ Package.onUse((api)=> {
 
 
 // For files
-  api.addFiles(['index.html','index.js'], 'client');
+  api.addFiles(['client/index.html','client/index.js'], 'client');
   api.addFiles(['Router.js'], 'client');
 });

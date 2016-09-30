@@ -27,3 +27,5 @@ mrt:external-file-loader
 #codeIt Packages
 
 index
+accounts-password
+accounts-ui
