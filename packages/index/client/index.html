@@ -1,15 +1,15 @@
 <template name="hello">
- <div id="heading">
+  
+  <div id="heading">
      <p id="headingText">Credit Suisse CodeIt 2016</p>
      <p id="headingText">Team4CodeIt</p>
   </div>
 
-  <!--<div id="cash">
-    {{> cash}}
-  </div>-->
+  {{> data}}
 
-  <!--<div id="transactionLog">
-    {{> transactionLog}}
-  </div>-->
-  <p id="cashBalance">$ {{cashBal}} </p>
 </template>
+
+  <template name="data">
+  <p id="cashBalance">${{cashBal}} </p>
+  <p id="stockValue">{{s0001}} | {{s0005}} | {{s0386}} | {{s0388}} | {{s3988}}</p>
+  </template>

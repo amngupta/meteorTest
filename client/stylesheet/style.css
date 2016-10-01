@@ -17,6 +17,14 @@ body {
   color: white;
   margin: 150px;
 }
+
+#stockValue {
+  font-size: 50px;
+  line-height: 0.5;
+  text-align: center;
+  color: white;
+  margin: 150px;
+}
  
 /*.container {
   max-width: 600px;
