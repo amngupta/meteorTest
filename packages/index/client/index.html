@@ -26,11 +26,56 @@
     </div>
   </div>
 
-  <div class="right" style="float:left; color:white; width:85%">
+  <div class="center" style="float:left; color:white; width:70%">
      <p class="headingText" style="font-size: 50px; text-align: center; line-height: 0.5; color: white;">Credit Suisse CodeIt 2016</p>
      <p class="headingText" style="font-size: 50px; text-align: center; line-height: 0.5; color: white;">Team4CodeIt</p>
-     <p class="cashBalance" style="font-size: 250px; line-height: 0.25; text-align: center; color: white; margin: 150px;">${{cashBal}}</p>
+     <p class="cashBalance" id = "cashBalance" style="font-size: 250px; line-height: 0.25; text-align: center; color: white; margin: 150px;">${{cashBal}}</p>
+  </div>
+
+  <div class="right" style="float:left; color:white; width:15%">
+    <span style="">Manual Order</span>
+    <form name="manualOrderForm">
+      <span style="">Exchange: </span><br>
+      <input type="radio" id="exchange" name="exchange" value="exchange1" checked> Exchange 1
+      <input type="radio" id="exchange" name="exchange" value="exchange2"> Exchange 2<br>
+      <input type="radio" id="exchange" name="exchange" value="exchange3"> Exchange 3
+      <br>
+      <span style="">Stock: </span><br>
+      <input type="radio" id="symbol" name="symbol" value="0001" checked> 0001
+      <input type="radio" id="symbol" name="symbol" value="0005"> 0005
+      <input type="radio" id="symbol" name="symbol" value="0386"> 0386<br>
+      <input type="radio" id="symbol" name="symbol" value="0388"> 0388
+      <input type="radio" id="symbol" name="symbol" value="3988"> 3988
+      <br>
+      <span style="">Order Side: </span><br>
+      <input type="radio" id="side" name="side" value="sell" checked> Sell
+      <input type="radio" id="side" name="side" value="buy"> Buy
+      <br>
+      <span style="">Order Type: </span><br>
+      <input type="radio" id="order_type" name="order_type" value="market" checked> Market
+      <input type="radio" id="order_type" name="order_type" value="limit"> Limit
+      <br>
+      <span style="">Quantity: </span><br>
+      <input type="int" id="qty" name="qty">
+      <br>
+    </form>
+    <span></span><br>
+    {{> submit}}
+    <br>
+    <span></span><br>
+    <span>Last Order</span><br>
+    <span>Exchange: {{getExchange}}</span><br>
+    <span>Stock: {{getStock}}</span><br>
+    <span>Side: {{getSide}}</span><br>
+    <span>Type: {{getOrderType}}</span><br>
+    <span>Quantity: {{getQuantity}}</span><br>
+    <span>Price: {{getPrice}}</span><br>
   </div>
 </div>
   
 </template>
+
+<template name="submit">
+  <button>Submit</button>
+</template>
+
