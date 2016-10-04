@@ -102,7 +102,7 @@ var getTeamData=function(){
     }
 		else
     {
-      //console.log(err);
+      // console.log(err);
     }
 	});
 }
