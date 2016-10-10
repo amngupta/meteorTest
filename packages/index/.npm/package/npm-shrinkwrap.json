@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "fullcalendar": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/fullcalendar/-/fullcalendar-3.0.0.tgz",
+      "from": "fullcalendar@3.0.0"
+    },
+    "jquery": {
+      "version": "3.1.1",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz",
+      "from": "jquery@>=2.0.0"
+    },
+    "jquery-ui": {
+      "version": "1.12.1",
+      "resolved": "https://registry.npmjs.org/jquery-ui/-/jquery-ui-1.12.1.tgz",
+      "from": "jquery-ui@1.12.1"
+    },
+    "moment": {
+      "version": "2.15.1",
+      "resolved": "https://registry.npmjs.org/moment/-/moment-2.15.1.tgz",
+      "from": "moment@>=2.9.0"
+    }
+  }
+}
